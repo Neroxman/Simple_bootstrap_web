@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+    
+    <script src="js/jquery.min.js" type="text/javascript"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>    
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrapValidator.min.js" type="text/javascript"></script>   
+    <script src="js/skrypty.js" type="text/javascript"></script>  
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><img src="logo.png">
+                <hr> 
+            </div>
+        </div>
+        <div class="row">
+        <div class="naglowek">
+            <div class="col-md-12 h3">
+            <h2>Get a Free 30-Min Marketing Consult fot Your Business</h2> Please give full answers so you can give me the information to see if we cen work together profitably. </div>
+            </div>
+        </div>
+            <p class="margines h4"> NOTE: Please answer all questions with as much detail as possible. </p>
+            
+        <div class="row">
+        <div class="lewa">
+            
+            <div class="col-xs-12 col-md-5 quatation" >
+                <p>The way Sam does it is genius. I have</p>
+                <p>absolutely no hestitation</p>
+                <p>recommending Sam and his team. It is</p>
+                <p>a decision you'll take - you won't</p>
+                <p>regret.</p>
+                <img class="line">
+                <figure class="figure">
+                <img src="..." class="figure-img img-fluid rounded biz img-circle">
+                <figcaption class="figure-caption">Peter Sage</figcaption>
+                </figure>
+                <p class="small">Serial Entrepreneur, International Business Coach</p>
+                <p><img src="bird.png">Experienced working with new and big businesses</p>
+                <p><img src="bird.png">Marketing Funnel Engineering</p>
+                <p><img src="bird.png">Inspiring and touching stories</p>
+                <p><img src="bird.png">Passionate & professional team</p>
+                <p><img src="bird.png">Agile Canvas methodology</p> 
+            </div>
+        </div>
+            
+                <div class="col-xs-12 col-md-6 col-md-offset-1 ">
+                    <p> Complete the short application below your free digital age 
+                    marketing consult.Learn the best way to start building your 
+                    company story to take your business to the next level.</p>
+                    <div class="marginPrawa">
+                    <p>All answers are 100% confidental & secure. <sup><a data-tooltip data-placement="right" title="This is imprtant!" id="myToolTip"><img src="pytajnik.png" ></a><sup></p>   
+<form id="info-form" name="info-form" method="post" data-toggle="validator" role="form" onsubmit="return validateText()">
+  <div class="form-group">
+    <input type="text" class="form-control" id="Name" name="Name" placeholder="First Name" class="input">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="LName" name="LName" placeholder="Last Name" class="input">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="Company" name="Company" placeholder="What is you company Name?" class="input">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="Website" name="Website" placeholder="What is your company website? (optional)" class="input">
+  </div>
+  <div class="form-group">
+  <select class="form-control option" id="Revenue" name="Revenue" required>
+     <option value="" disabled selected hidden>What is your company annual revenue? (-select-)</option>
+    <option>1</option>
+    <option>2</option>  
+  </select>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" id="Challenge" name="Challenge" rows="2" placeholder="What is challenge in your life that makes you want to join StoryGuild?"></textarea>
+  </div>  
+  <div class="form-group">
+    <textarea class="form-control" id="Achieve" name="Achieve" rows="2" placeholder="What would you like to achieve from joining the StoryGuild?"></textarea>
+  </div>  
+  <div class="form-group">
+    <textarea class="form-control" id="Contribute" name="Contribute" rows="2" placeholder="What value do you believe you can contribute to this amazing group?"></textarea>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" id="Sam" name="Sam" rows="2" placeholder="How well do you know Sam and his work?"></textarea>
+  </div>  
+  <div class="form-group">
+    <textarea class="form-control" id="Questions" name="Questions" rows="2" placeholder="Do you have any questions for us before you submit your aplication? (optional)"></textarea>
+  </div>  
+  <div class="form-group">
+    <input type="email" class="form-control" id="Email" name="Email" placeholder="What is your email?" >
+  </div> 
+  <div class="form-group">
+    <input type="number" class="form-control" id="Phone" name="Phone" placeholder="What is your mobile number? (with the country code)">
+  </div> 
+    
+  <button type="submit" id="submitBtn" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">APPLY  TO THE STORY GUILD</button>
+  <div class="bottomR">    
+  <p>Your information is 100% confidential. We only use your data to process your application.</p> 
+  <p>Request to delete your data anytime.</p> 
+  </div>      
+    
+  <div class="modal fade bs-example-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">Entered Data: </div>
+            <div class="modal-body">
+                <table class="table">
+                    <tr>
+                        <th>First Name</th>
+                        <td id="Nam"></td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td id="Lnam"></td>
+                    </tr>
+                    <tr>
+                        <th>What is you company Name?</th>
+                        <td id="Compan"></td>
+                    </tr>
+                    <tr>
+                        <th>What is your company website? (optional)</th>
+                        <td id="Websit"></td>
+                    </tr>
+                     <tr>
+                        <th>What is your company annual revenue? (-select-)</th>
+                        <td id="Revenu"></td>
+                    </tr>
+                     <tr>
+                        <th>What is challenge in your life that makes you want to join StoryGuild?</th>
+                        <td id="Challeng"></td>
+                    </tr>
+                     <tr>
+                        <th>What would you like to achieve from joining the StoryGuild?</th>
+                        <td id="Achiev"></td>
+                    </tr>
+                     <tr>
+                        <th>What value do you believe you can contribute to this amazing group?</th>
+                        <td id="Contribut"></td>
+                    </tr>
+                     <tr>
+                        <th>Do you have any questions for us before you submit your aplication? (optional)</th>
+                        <td id="Question"></td>
+                    </tr>
+                     <tr>
+                        <th>What is your email?</th>
+                        <td id="Emai"></td>
+                    </tr>
+                     <tr>
+                        <th>What is your mobile number? (with the country code)</th>
+                        <td id="Phon"></td>
+                    </tr>
+                </table>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" href="index.html">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>            
+            </div>
+        </div>
+    </div>
+</div>
+           
+    <footer class="site-footer">
+    <div class="container marginFooter">
+            <hr> 
+        <div class="row marginFooter">
+            <div class="col-xs-6 col-md-2"><b>@James Cook Media</b></div>
+            <div class="col-xs-6 col-md-2 bold"><a href="#" data-toggle="modal" data-target="#bannerformmodal1">Contact us</a></div>
+            <div class="col-xs-6 col-md-2 bold"><a href="#" data-toggle="modal" data-target="#bannerformmodal2">Terms & Condition</a></div>
+            <div class="col-xs-6 col-md-2 bold"><a href="mailto:samuel.cook@jamescook.pl">samuel.cook@jamescook.pl</a></div>
+            <div class="col-xs-6 col-md-2 col-sm-offset-1 bold ">+48 510 293 126</div>
+    </div>    
+        <div class="bottom-footer">
+            <div class="col-md-12 textFooter">HMS RESOLUTE MEDIA Sp. z o.o, ul. Wrocławska 31/5, 30-011 Kraków</div>
+        </div>
+    </div>    
+        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="bannerformmodal1">
+            <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">Contact: </div>
+            <div class="modal-body">
+                        We are everywhere!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" href="index.html">Confirm</button>
+            </div>
+            </div>
+        </div>
+    </div>
+        
+          <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="bannerformmodal2">
+            <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">Terms & Condition</div>
+            <div class="modal-body">
+                        <table class="table">
+                            <tr> 
+                            <td>1. Lorem 1</td>
+                            <td>2. Lorem 2</td>
+                            </tr>
+                        </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" href="index.html">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>    
+        
+</footer>       
+        
+</body>
+</html>

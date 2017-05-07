@@ -1,0 +1,210 @@
+.body
+{
+	font-size: 21px;
+}
+
+.top 
+{	
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.naglowek 
+{
+	text-align: center;
+	margin-top: 4%;
+}
+
+.lewa
+{
+    font-size: 16px;
+    margin-top: 8%;
+    text-align: center;
+}
+
+.row
+{
+    font-size: 14px;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.marginNaglowek
+{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.margines
+{
+    margin-top:3%;
+    text-align: center;
+}
+
+p
+{
+    margin-bottom: 1px;
+}
+
+.marginPrawa
+{
+    margin-top: 4%;
+}
+
+hr 
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tooltip
+{
+    font-size: 10px;
+}
+
+.form-control
+{
+    width: 75%;
+    height: 50px;
+    border-radius: 0px 0px 0px;
+    color: black;
+    font-size: 15px;
+}
+
+select:invalid 
+{ 
+    color: #999; 
+}
+
+.btn
+{
+    margin-top: 2%;
+    border-radius: 0px 0px 0px; 
+    width: 300px;
+    height: 50px;
+    background-color: #48cb9d;
+    border-color: #48cb9d;
+    font-size: 17px;
+    font-family: Arial Rounded MT;
+    font-weight: bold;
+}
+
+.btn:hover
+{
+    background-color: #219b71;
+    border-color: #219b71;
+}
+
+.btn:focus
+{
+    background-color: #45c89b;
+    border-color: #219b71;
+}
+
+.btn:active
+{
+    background-color: #45c89b;
+    border-color: #45c89b;
+}
+
+.form-control::-webkit-input-placeholder 
+{
+    color: #999;
+    font-size: 12px;
+}
+
+.option
+{
+    font-size: 12px;
+}
+
+.quatation
+{
+    background: url('quatation.png') no-repeat;
+    padding-top: 130px;
+    background-position: center 5%;
+}
+
+.line
+{
+    content: url("line.png");
+    width: 10%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.biz
+{
+    content: url("biz.jpg");   
+}
+
+.figure-caption
+{
+    font-size: 19px;   
+    font-family: Calibri;
+    font-weight: bold;
+    color: #5a5353;
+    padding-top: 2%;
+}
+
+.small
+{
+    font-size: 15px; 
+    color: #5a5353;
+    font-family: Calibri;
+    margin-bottom: 60px;
+}
+
+.bottomR
+{
+    font-size: 13px;
+    margin-top: 3%;
+}
+
+.bold
+{
+    font-weight: 400;
+    color: black;
+}
+
+.marginFooter
+{
+    margin-top: 2%;   
+}
+
+.textFooter
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 10px;
+    color: #666262;
+}
+
+footer a
+{
+    color: black; 
+}
+
+footer a:hover
+{
+    color: black; 
+}
+
+footer a:hover
+{
+    color: black; 
+}
+
+a:focus
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: black;
+    text-decoration: none;
+}
+
+
